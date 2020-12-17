@@ -27,14 +27,20 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Text(
-                'Reuben Kihiu',
+                'SOFTWARE DEVELOPER',
                 style: TextStyle(
                   fontSize: 18.0,
-                  color: Colors.white,
-//                  fontWeight: FontWeight.bold,
-                  fontFamily: 'SOFTWARE DEVELOPER',
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 2.5,
+                  fontFamily: 'SourceSansPro',
                 ),
               ),
+              Container(
+                child: Row(
+                  children: <Widget>[Icon(icon)],
+                ),
+              )
             ],
           ),
         ),
