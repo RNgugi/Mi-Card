@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                 width: 100.0,
                 height: 100.0,
                 color: Colors.blue,
-                child: Text('Container 2'),
+                child: Text('Container 3'),
               ),
             ],
           ),
