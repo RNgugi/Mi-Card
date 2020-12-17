@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -36,11 +37,49 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                 ),
               ),
-              Container(
-                child: Row(
-                  children: <Widget>[Icon(icon)],
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
                 ),
-              )
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+254 740 147 010',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'reubeenkihiu@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
